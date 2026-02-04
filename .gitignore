@@ -1,0 +1,12 @@
+verif/work/cov_work
+verif/work/waves_db
+verif/work/xcelium.d
+formal/jgproject/
+*.log
+*.bak
+*.tmp
+*.history
+*.lock
+**/.simvision/
+verif/work/.symbolnamelist
+verif/work/.symbolportinfomap
