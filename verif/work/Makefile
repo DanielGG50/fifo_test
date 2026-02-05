@@ -16,17 +16,16 @@ sim_uvm:
 sim_uvm_gui:
 	xrun ${compile_switches_uvm} -gui
 
-sim_cov:
-	xrun $(compile_switches) -cov_cgsample -covoverwrite -coverage u -covtest $(testname)
 
-sim_cov_2:
-	xrun ${compile_switches}  -coverage all -covoverwrite
+sim_cov:
+	xrun ${compile_switches} -cov_cgsample -coverage all -covoverwrite -covtest $(testname)
 
 cov_merge:
 	imc -exec cov_merge.tcl
 
 sim_uvm_cov:
 	xrun ${compile_switches_uvm} -cov_cgsample
+  
 cov_gui:
 	imc -load test
 

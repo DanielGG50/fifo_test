@@ -1,4 +1,4 @@
-module sfifo #(parameter DATA_WIDTH = 32, parameter NUM_ELEMENTS = 16) (
+module sfifo (
 	input logic clk,
 	input logic arst_n,
 	// Writing port //

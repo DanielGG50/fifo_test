@@ -1,4 +1,4 @@
-module fv_sfifo #(parameter DATA_WIDTH = 32, parameter NUM_ELEMENTS = 64) (
+module fv_sfifo (
 	input logic clk,
 	input logic arst_n,
 	// Writing port //
@@ -137,4 +137,4 @@ module fv_sfifo #(parameter DATA_WIDTH = 32, parameter NUM_ELEMENTS = 64) (
 
 endmodule: fv_sfifo
 
-bind sfifo fv_sfifo #(DATA_WIDTH,  NUM_ELEMENTS) fv_sfifo_inst(.*);
+bind sfifo fv_sfifo fv_sfifo_inst(.*);
