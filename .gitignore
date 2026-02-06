@@ -10,3 +10,5 @@ formal/jgproject/
 **/.simvision/
 verif/work/.symbolnamelist
 verif/work/.symbolportinfomap
+verif/work/.cov_merge.tcl.swp
+verif/work/shm_db/
